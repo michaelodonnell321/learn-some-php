@@ -21,4 +21,21 @@ print_r($odd_numbers);
 //shift to remove from beginning
 array_shift($odd_numbers);
 print_r($odd_numbers);
+
+//array_merge to concatenate 2 arrays
+$even_numbers = [2,4,6,8];
+$all_numbers = array_merge($odd_numbers, $even_numbers);
+print_r($all_numbers);
+//sort to sort an array, rsort to sort in reverse
+rsort($all_numbers);
+sort($all_numbers);
+print_r($all_numbers);
+
+//array_slice returns a new array
+//use second arg to start at that index
+$some_numbers = [1,2,3,4,5,6,7,8];
+print_r(array_slice($some_numbers, 4)); // this will start printing at index 4
+//adding a 3rd arg will determine length of slice
+$some_numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+print_r(array_slice($some_numbers, 4,2));
 ?>
