@@ -24,4 +24,22 @@ while ($counterTwo < 20) {
 
     echo "Executing: counter is $counterTwo.\n";
 }
+
+$counterThree = 0;
+
+while ($counterThree < 15) {
+    $counterThree += 1;
+
+    if ($counterThree > 6) {
+        echo "counter is larger than 6, stop immediately";
+        break;
+    }
+
+    if ($counterThree % 2 == 0) {
+        echo "Skip number $counterThree, it is even.\n";
+        continue;
+    }
+
+    echo "Executing: counter is $counter.\n";
+}
 ?>
