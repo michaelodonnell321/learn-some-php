@@ -13,4 +13,15 @@ for ($i = 0; $i < count($odd_numbers); $i=$i+1) {
 foreach ($odd_numbers as $odd_number) {
     echo $odd_number . "\n";
 }
+
+//for arrays with keys, you can use the following syntax
+//to print the key and the value on a new line
+$phone_numbers = [
+    "Michael" => "555-555-5555",
+    "Carolyn" => "666-666-6666",
+];
+
+foreach ($phone_numbers as $name => $number) {
+    echo "$name's number is $number.\n";
+}
 ?>
